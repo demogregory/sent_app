@@ -27,3 +27,5 @@ else:
 #### Print sentiment score and sent label
 st.markdown(f"We have determined that your score of {round(score, 2)} exhibits a **{sent}** sentiment")
 st.markdown(f"Note: sentiment scores range from -1 (negative) to 1 (positive)")
+
+st.markdown("### Thank you for using our app.")

@@ -29,3 +29,4 @@ st.markdown(f"We have determined that your score of {round(score, 2)} exhibits a
 st.markdown(f"Note: sentiment scores range from -1 (negative) to 1 (positive)")
 
 st.markdown("### Thank you for using our app.")
+st.markdown("#### Please keep in touch!")

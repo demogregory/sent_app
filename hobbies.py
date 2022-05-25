@@ -30,3 +30,4 @@ st.markdown(f"Note: sentiment scores range from -1 (negative) to 1 (positive)")
 
 st.markdown("### Thank you for using our app.")
 st.markdown("#### Please keep in touch!")
+st.markdown("#### And reach out with questions!")

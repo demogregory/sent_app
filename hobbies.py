@@ -15,6 +15,7 @@ text = st.text_input("Please tell us how you feel:", value = "Enter text here")
 
 #### TextBlob to analyze input text
 score = TextBlob(text).sentiment.polarity
+subj = TextBlob(text).sentiment.subjectivity
 
 # Create label (called sent) from TextBlob polarity score to use in summary below
 if score > 0.0:
@@ -25,8 +26,14 @@ else:
     sent = "negative"
 
 #### Print sentiment score and sent label
+
+st.markdown("### Sentiment")
 st.markdown(f"We have determined that your score of {round(score, 2)} exhibits a **{sent}** sentiment")
 st.markdown(f"Note: sentiment scores range from -1 (negative) to 1 (positive)")
+
+st.markdown("### Subjectivity")
+st.markdown(f"We have determined a subjectivity score of {round(subj, 2)}")
+
 
 st.markdown("### Thank you for using our app.")
 st.markdown("#### Please keep in touch!")
